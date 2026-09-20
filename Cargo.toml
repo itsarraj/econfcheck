@@ -1,0 +1,23 @@
+[package]
+name = "econfcheck"
+version = "0.1.0"
+edition = "2021"
+description = "Validates that real files actually follow a repo's own .editorconfig rules — an eclint (Node) alternative"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/econfcheck"
+readme = "README.md"
+keywords = ["editorconfig", "lint", "cli", "formatting"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "econfcheck"
+path = "src/lib.rs"
+
+[[bin]]
+name = "econfcheck"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
