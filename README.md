@@ -8,6 +8,12 @@ drifting out of compliance (a paste from elsewhere, a tool that doesn't
 respect it) — this is the CI gate that actually enforces what the file
 only *suggests*.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
